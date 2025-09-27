@@ -1,0 +1,19 @@
+#=====================================================
+# world
+#=====================================================
+
+# Material Database
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+
+# World
+/gate/world/geometry/setXLength 300. cm
+/gate/world/geometry/setYLength 300. cm
+/gate/world/geometry/setZLength 300. cm
+/gate/world/setMaterial Air
+/gate/world/vis/forceWireframe
+
+
+
+
+
+

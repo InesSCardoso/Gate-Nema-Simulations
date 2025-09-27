@@ -1,0 +1,45 @@
+#=====================================================
+# main
+#=====================================================
+
+#Materials
+/gate/geometry/setMaterialDatabase  /home/vgate/Downloads/sensitivity/sensitivity/data/GateMaterials.db
+
+# Verbosity
+/control/execute mac/verbose.mac
+
+# Geometry
+/control/execute mac/world.mac
+/control/execute mac/pet_philips_vereos.mac
+/control/execute mac/pet_digitizer.mac
+/control/execute mac/sensitivity_phantom.mac
+
+# Physics
+/control/execute mac/physics.mac
+
+# Output
+/control/execute mac/output.mac
+
+# Initialisation
+/gate/run/initialize
+
+# Visualisation
+/control/execute mac/visu.mac
+
+# Source
+/control/execute mac/sensitivity_source.mac
+
+# Random
+/gate/random/setEngineName MersenneTwister
+#/gate/random/setEngineSeed 123456789
+/gate/random/setEngineSeed auto
+/gate/random/verbose 1
+
+# Start acquisition
+/gate/application/setTimeStart 0 s
+/gate/application/setTimeSlice 0.1 s
+/gate/application/setTimeStop 120 s
+/gate/application/startDAQ
+
+
+
