@@ -1,0 +1,24 @@
+#=====================================================
+# physics
+#=====================================================
+
+/gate/physics/addPhysicsList emstandard_opt4
+
+
+# High cut by default
+/gate/physics/Gamma/SetCutInRegion      world 1 mm
+/gate/physics/Electron/SetCutInRegion   world 1 mm
+/gate/physics/Positron/SetCutInRegion   world 1 mm
+
+# Cuts for particle in phantom
+/gate/physics/Gamma/SetCutInRegion      phantom 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom 0.01 mm
+
+
+
+
+# Cuts for particle in crystal
+/gate/physics/Gamma/SetCutInRegion      crystal 0.1  mm
+/gate/physics/Electron/SetCutInRegion   crystal 0.1  mm
+/gate/physics/Positron/SetCutInRegion   crystal 0.01  mm
