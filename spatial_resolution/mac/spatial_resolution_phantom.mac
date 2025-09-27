@@ -1,0 +1,21 @@
+#=====================================================
+# phantom
+#=====================================================
+
+/gate/world/daughters/name                		phantom
+/gate/world/daughters/insert              		sphere
+/gate/phantom/geometry/setRmin                  	0.51 mm
+/gate/phantom/geometry/setRmax                  	0.55 mm   
+/gate/phantom/placement/setTranslation          	1.0 0.0 0.0 cm 
+/gate/phantom/setMaterial          		 	Polyethylene
+
+
+
+
+# Define the sensitive detector
+/gate/phantom/attachPhantomSD
+
+
+
+
+

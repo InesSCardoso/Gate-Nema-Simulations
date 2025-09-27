@@ -1,0 +1,18 @@
+#=====================================================
+# source
+#=====================================================
+
+/gate/source/addSource sphere 			gps
+/gate/source/sphere/gps/type 			Volume
+/gate/source/sphere/gps/shape 			Sphere
+/gate/source/sphere/gps/radius 			0.5 mm
+/gate/source/source/gps/particle            	e+
+/gate/source/source/gps/energytype          	Fluor18
+/gate/source/source/gps/angtype             	iso
+/gate/source/source/setForcedUnstableFlag   	true
+/gate/source/source/setForcedHalfLife       	6586.0 s
+/gate/source/source/setActivity             	2.200000000 Bq
+/gate/source/sphere/gps/pos/centre 		1 0 0 cm
+
+
+/gate/source/list
