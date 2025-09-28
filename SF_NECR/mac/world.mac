@@ -3,9 +3,12 @@
 #=====================================================
 
 # Material Database
+# Defines the location of the materials file to be used
+# This database contains all the material definitions that will be used in the simulation
 /gate/geometry/setMaterialDatabase data/GateMaterials.db
 
 # World
+# The world is the root simulation volume where all other geometries (phantom, PET, bed, etc.) are placed
 /gate/world/geometry/setXLength 300. cm
 /gate/world/geometry/setYLength 300. cm
 /gate/world/geometry/setZLength 300. cm
