@@ -1,7 +1,11 @@
 #=====================================================
 # phantom
 #=====================================================
+
+
 #Plastic tube 
+# Very thin cylinder (wall thickness ≈ 0.04 mm)
+# Acts as a container 
 /gate/world/daughters/name                		plasticTube
 /gate/world/daughters/insert              		cylinder
 /gate/plasticTube/geometry/setRmin                  	0.51 mm
@@ -10,7 +14,8 @@
 /gate/plasticTube/placement/setTranslation          	0.0 0.0 0.0 cm 
 /gate/plasticTube/setMaterial          		 	Polyethylene
 
-
+# Phantom 1
+# Aluminium cylinder around the plastic tube
 /gate/world/daughters/name                	phantom
 /gate/world/daughters/insert              	cylinder
 /gate/phantom/geometry/setRmin                  1.95 mm
@@ -20,6 +25,8 @@
 /gate/phantom/setMaterial          		Aluminium
 /gate/phantom/vis/forceWireframe    
 
+# Phantom 2
+# Second aluminium layer
 /gate/world/daughters/name                	phantom2
 /gate/world/daughters/insert              	cylinder
 /gate/phantom2/geometry/setRmin                  3.5 mm
@@ -29,6 +36,9 @@
 /gate/phantom2/setMaterial          		Aluminium
 /gate/phantom2/vis/forceWireframe      
 
+
+# Phantom 3
+# Third aluminium layer
 /gate/world/daughters/name                	phantom3
 /gate/world/daughters/insert              	cylinder
 /gate/phantom3/geometry/setRmin                  5.1 mm
@@ -38,7 +48,8 @@
 /gate/phantom3/setMaterial          		Aluminium
 /gate/phantom3/vis/forceWireframe   
 
-   
+# Phantom 4
+# Fourth aluminium layer
 /gate/world/daughters/name                	phantom4
 /gate/world/daughters/insert              	cylinder
 /gate/phantom4/geometry/setRmin                  6.7 mm
@@ -48,6 +59,8 @@
 /gate/phantom4/setMaterial          		Aluminium
 /gate/phantom4/vis/forceWireframe     
 
+# Phantom 5
+# Fifth aluminium layer
 /gate/world/daughters/name                	phantom5
 /gate/world/daughters/insert              	cylinder
 /gate/phantom5/geometry/setRmin                  8.3 mm
@@ -63,7 +76,6 @@
 # Define the sensitive detector
 /gate/phantom/attachPhantomSD
 /gate/plasticTube/attachPhantomSD
-#/gate/endshielding/attachPhantomSD
 /gate/phantom2/attachPhantomSD
 /gate/phantom3/attachPhantomSD
 /gate/phantom4/attachPhantomSD
