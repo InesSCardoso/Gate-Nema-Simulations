@@ -7,9 +7,11 @@
 /gate/actor/stat/save output/stat.txt
 
 # ROOT OUTPUT 
-/gate/output/root/enable
-/gate/output/root/setFileName 			output/pet
+/gate/output/root/enable                            # Enable ROOT output format
+/gate/output/root/setFileName 			output/pet      # Set the base name for ROOT output files
 
+
+# Configure what information is stored in the ROOT file
 /gate/output/root/setRootCoincidencesFlag 	1
 /gate/output/root/setRootdelayFlag 		1
 /gate/output/root/setRootNtupleFlag 		0
