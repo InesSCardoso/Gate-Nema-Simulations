@@ -5,7 +5,6 @@
 # (gamma, electrons, positrons) are produced in the "world"
 # Larger cuts = faster simulation, less accuracy
 
-
 /gate/physics/addPhysicsList emstandard_opt4
 
 
@@ -14,37 +13,10 @@
 /gate/physics/Electron/SetCutInRegion   world 1 mm
 /gate/physics/Positron/SetCutInRegion   world 1 mm
 
-# Cuts for particle in plasticTube
-/gate/physics/Gamma/SetCutInRegion      plasticTube 0.1 mm
-/gate/physics/Electron/SetCutInRegion   plasticTube 0.1 mm
-/gate/physics/Positron/SetCutInRegion   plasticTube 0.01 mm
-
 # Cuts for particle in phantom
 /gate/physics/Gamma/SetCutInRegion      phantom 0.1 mm
 /gate/physics/Electron/SetCutInRegion   phantom 0.1 mm
 /gate/physics/Positron/SetCutInRegion   phantom 0.01 mm
-
-# Cuts for particle in phantom
-/gate/physics/Gamma/SetCutInRegion      phantom2 0.1 mm
-/gate/physics/Electron/SetCutInRegion   phantom2 0.1 mm
-/gate/physics/Positron/SetCutInRegion   phantom2 0.01 mm
-
-# Cuts for particle in phantom
-/gate/physics/Gamma/SetCutInRegion      phantom3 0.1 mm
-/gate/physics/Electron/SetCutInRegion   phantom3 0.1 mm
-/gate/physics/Positron/SetCutInRegion   phantom3 0.01 mm
-
-
-# Cuts for particle in phantom
-/gate/physics/Gamma/SetCutInRegion      phantom4 0.1 mm
-/gate/physics/Electron/SetCutInRegion   phantom4 0.1 mm
-/gate/physics/Positron/SetCutInRegion   phantom4 0.01 mm
-
-# Cuts for particle in phantom
-/gate/physics/Gamma/SetCutInRegion      phantom5 0.1 mm
-/gate/physics/Electron/SetCutInRegion   phantom5 0.1 mm
-/gate/physics/Positron/SetCutInRegion   phantom5 0.01 mm
-
 
 # Cuts for particle in crystal
 /gate/physics/Gamma/SetCutInRegion      crystal 0.1  mm
