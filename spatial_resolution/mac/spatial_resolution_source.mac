@@ -2,17 +2,18 @@
 # source
 #=====================================================
 
-/gate/source/addSource sphere 			gps
-/gate/source/sphere/gps/type 			Volume
-/gate/source/sphere/gps/shape 			Sphere
-/gate/source/sphere/gps/radius 			0.5 mm
-/gate/source/source/gps/particle            	e+
-/gate/source/source/gps/energytype          	Fluor18
+# Add a new source named "source"
+/gate/source/addSource source 			          gps
+/gate/source/source/gps/type 			            Volume   # Source type: volume
+/gate/source/source/gps/shape 			          sphere   # Shape of the source: sphere
+/gate/source/source/gps/radius 			          0.5 mm   # Sphere radius
+/gate/source/source/gps/particle            	e+       # Particle emitted: positron (e+)
+/gate/source/source/gps/energytype          	Fluor18  # Energy distribution
 /gate/source/source/gps/angtype             	iso
 /gate/source/source/setForcedUnstableFlag   	true
-/gate/source/source/setForcedHalfLife       	6586.0 s
-/gate/source/source/setActivity             	2.200000000 Bq
-/gate/source/sphere/gps/pos/centre 		1 0 0 cm
+/gate/source/source/setForcedHalfLife       	6586.0 s # Set half-life of the isotope
+/gate/source/source/setActivity             	2200000000 Bq # Source activity 
+/gate/source/sphere/gps/pos/centre 		        1 0 0 cm # Position of the source center in the world
 
 
 /gate/source/list
