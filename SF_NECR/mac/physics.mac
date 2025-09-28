@@ -1,6 +1,9 @@
 #=====================================================
 # physics
 #=====================================================
+# Defines the minimum range at which secondary particles 
+# (gamma, electrons, positrons) are produced in the "world"
+# Larger cuts = faster simulation, less accuracy
 
 /gate/physics/addPhysicsList emstandard_opt4
 
