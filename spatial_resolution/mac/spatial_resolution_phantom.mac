@@ -2,12 +2,13 @@
 # phantom
 #=====================================================
 
-/gate/world/daughters/name                		phantom
-/gate/world/daughters/insert              		sphere
-/gate/phantom/geometry/setRmin                  	0.51 mm
-/gate/phantom/geometry/setRmax                  	0.55 mm   
-/gate/phantom/placement/setTranslation          	1.0 0.0 0.0 cm 
-/gate/phantom/setMaterial          		 	Polyethylene
+# Create a small sphere inside the world
+/gate/world/daughters/name                		    phantom
+/gate/world/daughters/insert              		    sphere
+/gate/phantom/geometry/setRmin                  	0.51 mm  # Inner radius
+/gate/phantom/geometry/setRmax                  	0.55 mm  # Outer radius
+/gate/phantom/placement/setTranslation          	1.0 0.0 0.0 cm  # Position offset along X axis
+/gate/phantom/setMaterial          		 	          Polyethylene    # Phantom material
 
 
 
