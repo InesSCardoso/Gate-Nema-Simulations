@@ -3,18 +3,18 @@
 #=====================================================
 
 
-/gate/source/addSource                      source
-/gate/source/source/gps/particle            e+
-/gate/source/source/gps/energytype          Fluor18
+/gate/source/addSource                      source    # Add a new source called "source"
+/gate/source/source/gps/particle            e+        # Particle emitted: positrons (e+)
+/gate/source/source/gps/energytype          Fluor18   # Energy distribution type: 
 /gate/source/source/gps/angtype             iso
-/gate/source/source/gps/type                Volume
-/gate/source/source/gps/shape               Cylinder
+/gate/source/source/gps/type                Volume    # Source type: volume
+/gate/source/source/gps/shape               Cylinder  # Source shape: cylinder
 /gate/source/source/setForcedUnstableFlag   true
-/gate/source/source/gps/radius              0.50 mm
-/gate/source/source/gps/halfz               35 cm
-/gate/source/source/setForcedHalfLife       6586.0 s
-/gate/source/source/gps/centre              0.0 0.0 0.0 cm
-/gate/source/source/setActivity             4680000 Bq
+/gate/source/source/gps/radius              0.50 mm   # Cylinder radius
+/gate/source/source/gps/halfz               35 cm     # Cylinder half-height → total height = 70 cm
+/gate/source/source/setForcedHalfLife       6586.0 s  # Half-life of Fluorine-18 isotope
+/gate/source/source/gps/centre              0.0 0.0 0.0 cm  # Center position of the source (world origin)
+/gate/source/source/setActivity             4680000 Bq      # Source activity (4.68 MBq)
 
 
 /gate/source/list
